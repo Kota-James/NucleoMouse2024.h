@@ -21,6 +21,9 @@
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
+
+#define T_CNT_ACCL 3      //加速処理時のテーブルカウンタの変更量
+#define T_CNT_DECL 3      //減速処理時のテーブルカウンタの変更量
 //----テーブルカウンタ関連----
 #define MAX_T_CNT PULSE_SEC_HALF // テーブルカウンタの最大値
 #define MIN_T_CNT 25              // テーブルカウンタの最小値
