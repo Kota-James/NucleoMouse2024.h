@@ -80,7 +80,7 @@ void driveA(uint16_t);    //加速走行
 void driveD(uint16_t);    //減速走行
 void driveU(uint16_t);    //等速走行(前の速度を維持)
 void driveC(uint16_t);    //デフォルトインターバルで走行
-
+void driveR(uint16_t, uint16_t);    //回転走行
 //====上位関数====
 void half_sectionA(void);     //加速半区画
 void half_sectionD(void);     //減速半区画
@@ -88,6 +88,8 @@ void one_section(void);       //加減速一区画
 void one_sectionU(void);      //等速一区画
 void rotate_R90(void);        //右90°回転
 void rotate_L90(void);        //左90°回転
+void rotate_R90_S(void);      //スラローム右90°回転
+void rotate_L90_S(void);      //スラローム左90°回転
 void rotate_180(void);        //180°回転
 void set_position(uint8_t);   //位置合わせ
 void test_run(void);          //テスト走行
