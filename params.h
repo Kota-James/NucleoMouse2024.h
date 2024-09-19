@@ -18,19 +18,19 @@
 #define PULSE_SEC_HALF 218 // 半区画走行用パルス。2倍すると1区画分に
 #define PULSE_ROT_R90 155     // 右90度回転用パルス数
 #define PULSE_ROT_L90 155     // 左90度回転用パルス数
-#define PULSE_ROT_IN 185      //スラローム走行時の内側走行パルス数
-#define PULSE_ROT_OUT 460     //スラローム走行時の外側走行パルス数
+#define PULSE_ROT_IN 194      //スラローム走行時の内側走行パルス数
+#define PULSE_ROT_OUT 490     //スラローム走行時の外側走行パルス数
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
 
-#define T_CNT_ACCL 3      //加速処理時のテーブルカウンタの変更量
-#define T_CNT_DECL 3      //減速処理時のテーブルカウンタの変更量
+#define T_CNT_ACCL 1      //加速処理時のテーブルカウンタの変更量
+#define T_CNT_DECL 1      //減速処理時のテーブルカウンタの変更量
 //----テーブルカウンタ関連----
-#define MAX_T_CNT PULSE_SEC_HALF // テーブルカウンタの最大値
-#define MIN_T_CNT 25              // テーブルカウンタの最小値
-#define ARR_IN 5405         //スラローム走行時の内側ARR
-#define ARR_OUT 2173        //スラローム走行時の外側ARR
+#define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
+#define MIN_T_CNT 0              // テーブルカウンタの最小値
+#define ARR_IN 3093         //スラローム走行時の内側ARR
+#define ARR_OUT 1224        //スラローム走行時の外側ARR
 //----タイマ関連----
 #define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
 
@@ -53,10 +53,10 @@
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
 
 //----制御閾値（しきい値）----
-#define CTRL_BASE_L 100 // 左制御閾値
-#define CTRL_BASE_R 100 // 右制御閾値
-#define CTRL_MAX 350    // 制御量上限値
-#define CTRL_CONT 0.3F  // 比例制御係数
+#define CTRL_BASE_L 250 // 左制御閾値
+#define CTRL_BASE_R 250 // 右制御閾値
+#define CTRL_MAX 200    // 制御量上限値
+#define CTRL_CONT 0.2F  // 比例制御係数
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
