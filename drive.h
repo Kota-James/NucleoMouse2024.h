@@ -79,6 +79,7 @@ void drive_set_dir(uint8_t);    //進行方向の設定
 void driveA(uint16_t);    //加速走行
 void driveD(uint16_t);    //減速走行
 void driveU(uint16_t);    //等速走行(前の速度を維持)
+void driveU2(uint16_t, uint16_t);      //指定パルスで等速走行
 void driveC(uint16_t);    //デフォルトインターバルで走行
 void driveR(uint16_t, uint16_t);    //回転走行
 //====上位関数====

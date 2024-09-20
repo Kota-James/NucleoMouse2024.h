@@ -39,7 +39,7 @@ typedef union {         //共用体の宣言
     uint16_t LOWVOL:1;  //バッテリー低電圧フラグ(B7)
     uint16_t ROTATEL:1;    //左回転フラグ(B8)
     uint16_t ROTATER:1;    //右回転フラグ(B9)
-    uint16_t RSV10:1;   //予備ビット(B10)
+    uint16_t DRIVEU2:1;   //DriveU2(B10)
     uint16_t RSV11:1;   //予備ビット(B11)
     uint16_t RSV12:1;   //予備ビット(B12)
     uint16_t RSV13:1;   //予備ビット(B13)

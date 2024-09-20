@@ -18,8 +18,9 @@
 #define PULSE_SEC_HALF 218 // 半区画走行用パルス。2倍すると1区画分に
 #define PULSE_ROT_R90 155     // 右90度回転用パルス数
 #define PULSE_ROT_L90 155     // 左90度回転用パルス数
-#define PULSE_ROT_IN 194      //スラローム走行時の内側走行パルス数
-#define PULSE_ROT_OUT 490     //スラローム走行時の外側走行パルス数
+#define PULSE_ROT_IN 123      //スラローム走行時の内側走行パルス数
+#define PULSE_ROT_OUT 423     //スラローム走行時の外側走行パルス数
+#define PULSE_OFFSET 36       //スラローム前後のオフセット区間
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
@@ -29,10 +30,12 @@
 //----テーブルカウンタ関連----
 #define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
 #define MIN_T_CNT 0              // テーブルカウンタの最小値
-#define ARR_IN 3093         //スラローム走行時の内側ARR
-#define ARR_OUT 1224        //スラローム走行時の外側ARR
 //----タイマ関連----
 #define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
+
+#define ARR_IN 3252         //スラローム走行時の内側ARR
+#define ARR_OUT 946        //スラローム走行時の外側ARR
+#define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
 //----動作方向関連----
 #define MT_FWD_L GPIO_PIN_SET    // CW/CCWで前に進む出力（左）
