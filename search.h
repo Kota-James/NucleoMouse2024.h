@@ -77,6 +77,7 @@ struct coordinate_and_direction{
 void search_init(void);
 
 void searchA();                       //1区画停止型探索走行
+void searchB();                       //探索走行　超信地旋回
 void searchB_S_conf_route();                //スラローム探索走行
 void searchB_S_fast();                     //スラローム最短走行
 
