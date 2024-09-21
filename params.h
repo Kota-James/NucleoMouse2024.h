@@ -59,10 +59,10 @@
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
 
 //----制御閾値（しきい値）----
-#define CTRL_BASE_L 250 // 左制御閾値
-#define CTRL_BASE_R 250 // 右制御閾値
-#define CTRL_MAX 200    // 制御量上限値
-#define CTRL_CONT 0.2F  // 比例制御係数
+#define CTRL_BASE_L 200 // 左制御閾値
+#define CTRL_BASE_R 200 // 右制御閾値
+#define CTRL_MAX 250    // 制御量上限値
+#define CTRL_CONT 0.20F  // 比例制御係数
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
