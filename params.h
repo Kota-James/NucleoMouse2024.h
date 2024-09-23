@@ -64,7 +64,7 @@
 #define CTRL_BASE_R 100 // 右制御閾値
 #define CTRL_MAX 200    // 制御量上限値
 #define CTRL_P 0.25  // 比例制御係数
-#define CTRL_D  0.00  //微分制御係数
+#define CTRL_D  0.30  //微分制御係数
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
