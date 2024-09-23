@@ -20,7 +20,7 @@
 #define PULSE_ROT_L90 155     // 左90度回転用パルス数
 #define PULSE_ROT_IN 149      //スラローム走行時の内側走行パルス数
 #define PULSE_ROT_OUT 451     //スラローム走行時の外側走行パルス数
-#define PULSE_OFFSET 39       //スラローム前後のオフセット区間
+#define PULSE_OFFSET 38       //スラローム前後のオフセット区間
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
@@ -52,8 +52,8 @@
 #define WALL_BASE_R 300  // 右壁センサ
 #define WALL_BASE_L 300  // 左壁センサ
 
-#define ROT_START_FL 940//900//940//1006
-#define ROT_START_FR 633//600//633//683
+#define ROT_START_FL 870//940//900//940//1006
+#define ROT_START_FR 570//633//600//633//683
 
 #define BATT_LOW_VOL 3204 * 0.88 // バッテリ電圧低下判定のしきい値
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
