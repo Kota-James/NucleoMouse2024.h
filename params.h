@@ -18,9 +18,9 @@
 #define PULSE_SEC_HALF 218 // 半区画走行用パルス。2倍すると1区画分に
 #define PULSE_ROT_R90 154     // 右90度回転用パルス数
 #define PULSE_ROT_L90 155     // 左90度回転用パルス数
-#define PULSE_ROT_IN 149      //スラローム走行時の内側走行パルス数
-#define PULSE_ROT_OUT 451     //スラローム走行時の外側走行パルス数
-#define PULSE_OFFSET 38       //スラローム前後のオフセット区間
+#define PULSE_ROT_IN 139      //スラローム走行時の内側走行パルス数
+#define PULSE_ROT_OUT 437     //スラローム走行時の外側走行パルス数
+#define PULSE_OFFSET 34       //スラローム前後のオフセット区間
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
@@ -34,8 +34,8 @@
 #define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
 
 
-#define ARR_IN 3356//0.4s2685         //スラローム走行時の内側ARR
-#define ARR_OUT 1109//0.4s887        //スラローム走行時の外側ARR
+#define ARR_IN 2518//3571//3311//3356//0.5s3356//0.4s2685         //スラローム走行時の内側ARR
+#define ARR_OUT 801//1149//1114//1109//0.5s1109//0.4s887        //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
 //----動作方向関連----
@@ -53,19 +53,19 @@
 #define WALL_BASE_R 300  // 右壁センサ
 #define WALL_BASE_L 300  // 左壁センサ
 
-#define ROT_START_FL 870//940//900//940//1006
-#define ROT_START_FR 570//633//600//633//683
+#define ROT_START_FL 890//870//940//900//940//1006
+#define ROT_START_FR 590//570//633//600//633//683
 
 #define BATT_LOW_VOL 3204 * 0.88 // バッテリ電圧低下判定のしきい値
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
 
 //----制御閾値（しきい値）----
-#define RAPID_CHANGE 250  //急激な変化量の基準値
-#define CTRL_BASE_L 100 // 左制御閾値
-#define CTRL_BASE_R 100 // 右制御閾値
-#define CTRL_MAX 500    // 制御量上限値
-#define CTRL_P 0.10  // 比例制御係数
-#define CTRL_D  0  //微分制御係数
+#define RAPID_CHANGE 50  //急激な変化量の基準値
+#define CTRL_BASE_L 30 // 左制御閾値
+#define CTRL_BASE_R 30 // 右制御閾値
+#define CTRL_MAX 65    // 制御量上限値
+#define CTRL_P 0.25  // 比例制御係数
+#define CTRL_D 0.07  //微分制御係数
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
