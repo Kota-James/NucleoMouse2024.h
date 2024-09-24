@@ -18,15 +18,16 @@
 #define PULSE_SEC_HALF 218 // 半区画走行用パルス。2倍すると1区画分に
 #define PULSE_ROT_R90 154     // 右90度回転用パルス数
 #define PULSE_ROT_L90 155     // 左90度回転用パルス数
-#define PULSE_ROT_IN 139      //スラローム走行時の内側走行パルス数
-#define PULSE_ROT_OUT 437     //スラローム走行時の外側走行パルス数
-#define PULSE_OFFSET 34       //スラローム前後のオフセット区間
+#define PULSE_ROT_IN 140  //0.5s : 140  0.4s : 131  0.35s :    //スラローム走行時の内側走行パルス数
+#define PULSE_ROT_OUT 435 //0.5s : 435  0.4s : 428  0.35s :    //スラローム走行時の外側走行パルス数
+#define PULSE_OFFSET 38   //0.5s : 38   0.4s : 38   0.35s :     //スラローム前後のオフセット区間
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
 
 #define T_CNT_ACCL 1      //加速処理時のテーブルカウンタの変更量
 #define T_CNT_DECL 1      //減速処理時のテーブルカウンタの変更量
+
 //----テーブルカウンタ関連----
 #define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
 #define MIN_T_CNT 250              // テーブルカウンタの最小値
@@ -34,8 +35,8 @@
 #define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
 
 
-#define ARR_IN 2518//3571//3311//3356//0.5s3356//0.4s2685         //スラローム走行時の内側ARR
-#define ARR_OUT 801//1149//1114//1109//0.5s1109//0.4s887        //スラローム走行時の外側ARR
+#define ARR_IN 3571   //0.5s : 3571  0.4s : 3053  0.35s :      //スラローム走行時の内側ARR
+#define ARR_OUT 1149  //0.5s : 1149  0.4s : 935   0.35s :      //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
 //----動作方向関連----
@@ -53,8 +54,8 @@
 #define WALL_BASE_R 300  // 右壁センサ
 #define WALL_BASE_L 300  // 左壁センサ
 
-#define ROT_START_FL 890//870//940//900//940//1006
-#define ROT_START_FR 590//570//633//600//633//683
+#define ROT_START_FL 890//38
+#define ROT_START_FR 590//38
 
 #define BATT_LOW_VOL 3204 * 0.88 // バッテリ電圧低下判定のしきい値
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
