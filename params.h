@@ -32,7 +32,7 @@
 #define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
 #define MIN_T_CNT 0              // テーブルカウンタの最小値
 //----タイマ関連----
-#define DEFAULT_INTERVAL ARR_OFFSET//2980 // デフォルトのインターバル
+#define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
 
 
 #define ARR_IN 3571   //0.5s : 3571  0.4s : 3053  0.35s :      //スラローム走行時の内側ARR
@@ -76,7 +76,7 @@
     探索系
 ------------------------------------------------------------*/
 //----ゴール座標----
-#define GOAL_X 1 // 7
-#define GOAL_Y 0 // 7
+#define GOAL_X 3 // 7
+#define GOAL_Y 3 // 7
 
 #endif /* INC_PARAMS_H_ */

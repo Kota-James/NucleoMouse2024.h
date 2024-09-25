@@ -100,6 +100,7 @@ void rotate_L90_S(void);      //スラローム左90°回転
 void rotate_180(void);        //180°回転
 void set_position(uint8_t);   //位置合わせ
 void butt_adjust(void);       //尻当て調整
+void butt_adjust_LL(void);    //同じ方向に曲がる尻当て調整 帰還時に使用
 void test_run(void);          //テスト走行
 
 
