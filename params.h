@@ -30,9 +30,9 @@
 
 //----テーブルカウンタ関連----
 #define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
-#define MIN_T_CNT 250              // テーブルカウンタの最小値
+#define MIN_T_CNT 0              // テーブルカウンタの最小値
 //----タイマ関連----
-#define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
+#define DEFAULT_INTERVAL ARR_OFFSET//2980 // デフォルトのインターバル
 
 
 #define ARR_IN 3571   //0.5s : 3571  0.4s : 3053  0.35s :      //スラローム走行時の内側ARR
@@ -67,6 +67,7 @@
 #define CTRL_MAX 65    // 制御量上限値
 #define CTRL_P 0.25  // 比例制御係数
 #define CTRL_D 0.07  //微分制御係数
+#define CTRL_AMOUNT 2   //制御量
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
