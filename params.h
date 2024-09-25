@@ -30,7 +30,7 @@
 
 //----テーブルカウンタ関連----
 #define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
-#define MIN_T_CNT 250              // テーブルカウンタの最小値
+#define MIN_T_CNT 2250              // テーブルカウンタの最小値
 //----タイマ関連----
 #define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
 
