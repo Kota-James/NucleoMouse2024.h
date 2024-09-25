@@ -30,7 +30,7 @@
 
 //----テーブルカウンタ関連----
 #define MAX_T_CNT MIN_T_CNT + PULSE_SEC_HALF // テーブルカウンタの最大値
-#define MIN_T_CNT 2250              // テーブルカウンタの最小値
+#define MIN_T_CNT 250              // テーブルカウンタの最小値
 //----タイマ関連----
 #define DEFAULT_INTERVAL 2980 // デフォルトのインターバル
 
@@ -60,7 +60,7 @@
 #define BATT_LOW_VOL 3204 * 0.88 // バッテリ電圧低下判定のしきい値
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
 
-//----制御閾値（しきい値）----
+//----制御閾値（しきい値）----  250
 #define RAPID_CHANGE 50  //急激な変化量の基準値
 #define CTRL_BASE_L 30 // 左制御閾値
 #define CTRL_BASE_R 30 // 右制御閾値
