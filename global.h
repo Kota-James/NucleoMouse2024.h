@@ -40,10 +40,10 @@ typedef union {         //共用体の宣言
     uint16_t ROTATEL:1;    //左回転フラグ(B8)
     uint16_t ROTATER:1;    //右回転フラグ(B9)
     uint16_t DRIVEU2:1;   //DriveU2(B10)
-    uint16_t RSV11:1;   //予備ビット(B11)
-    uint16_t RSV12:1;   //予備ビット(B12)
-    uint16_t RSV13:1;   //予備ビット(B13)
-    uint16_t RSV14:1;   //予備ビット(B14)
+    uint16_t MODE1:1;   //制御量調整(B11)
+    uint16_t MODE2:1;   //制御量調整(B12)
+    uint16_t MODE3:1;   //制御量調整(B13)
+    uint16_t MODE4:1;   //制御量調整(B14)
     uint16_t RSV15:1;   //予備ビット(B15)
   }FLAG;
 } mouse_flags;
