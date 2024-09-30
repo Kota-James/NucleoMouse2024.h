@@ -44,7 +44,7 @@ typedef union {         //共用体の宣言
     uint16_t MODE2:1;   //制御量調整(B12)
     uint16_t MODE3:1;   //制御量調整(B13)
     uint16_t MODE4:1;   //制御量調整(B14)
-    uint16_t RSV15:1;   //予備ビット(B15)
+    uint16_t MODE5:1;   //制御量調整(B15)
   }FLAG;
 } mouse_flags;
 
