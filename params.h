@@ -29,6 +29,14 @@
 #define PULSE_ROT_L90 155     // 左90度回転用パルス数
 #define PULSE_ROT_IN 140  //0.5s : 140  0.4s : 131  0.35s :    //スラローム走行時の内側走行パルス数
 #define PULSE_ROT_OUT 435 //0.5s : 435  0.4s : 428  0.35s :    //スラローム走行時の外側走行パルス数
+
+#define PULSE_ROT_IN_50 140
+#define PULSE_ROT_OUT_50 435
+#define PULSE_ROT_IN_40 131
+#define PULSE_ROT_OUT_40 428
+#define PULSE_ROT_IN_35 131
+#define PULSE_ROT_OUT_35 428
+
 #define PULSE_OFFSET 38   //0.5s : 38   0.4s : 38   0.35s :     //スラローム前後のオフセット区間
 #define PULSE_ROT_180 310     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
