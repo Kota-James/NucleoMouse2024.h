@@ -30,14 +30,17 @@
 #define PULSE_ROT_IN 140  //0.5s : 140  0.4s : 131  0.35s :    //スラローム走行時の内側走行パルス数
 #define PULSE_ROT_OUT 435 //0.5s : 435  0.4s : 428  0.35s :    //スラローム走行時の外側走行パルス数
 
-#define PULSE_ROT_IN_50 128
-#define PULSE_ROT_OUT_50 430
-#define PULSE_ROT_IN_40 131
-#define PULSE_ROT_OUT_40 428
-#define PULSE_ROT_IN_35 131
-#define PULSE_ROT_OUT_35 428
+#define PULSE_ROT_IN_50 126
+#define PULSE_ROT_OUT_50 428
+#define PULSE_ROT_IN_40 135
+#define PULSE_ROT_OUT_40 441
+#define PULSE_ROT_IN_35 135
+#define PULSE_ROT_OUT_35 441
 
 #define PULSE_OFFSET 38   //0.5s : 38   0.4s : 38   0.35s :     //スラローム前後のオフセット区間
+#define PULSE_OFFSET_50 38
+#define PULSE_OFFSET_40 38
+#define PULSE_OFFSET_35 34
 #define PULSE_ROT_180 302     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
@@ -56,14 +59,14 @@
 #define ARR_OUT 1149  //0.5s : 1149  0.4s : 935   0.35s :      //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
-#define ARR_IN_50 3906
-#define ARR_OUT_50 1163
+#define ARR_IN_50 3968
+#define ARR_OUT_50 1168
 #define ARR_OFFSET_50 (ARR_IN_50 + ARR_OUT_50)/2
-#define ARR_IN_40 3053
-#define ARR_OUT_40 935
+#define ARR_IN_40 2963
+#define ARR_OUT_40 907
 #define ARR_OFFSET_40 (ARR_IN_40 + ARR_OUT_40)/2
-#define ARR_IN_35 3053
-#define ARR_OUT_35 935
+#define ARR_IN_35 2593
+#define ARR_OUT_35 794
 #define ARR_OFFSET_35 (ARR_IN_35 + ARR_OUT_35)/2
 
 //----動作方向関連----
