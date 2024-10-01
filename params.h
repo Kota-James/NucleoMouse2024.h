@@ -24,21 +24,21 @@
     走行系
 ------------------------------------------------------------*/
 //----走行パルス関連----
-#define PULSE_SEC_HALF 218 // 半区画走行用パルス。2倍すると1区画分に
-#define PULSE_ROT_R90 154     // 右90度回転用パルス数
-#define PULSE_ROT_L90 155     // 左90度回転用パルス数
+#define PULSE_SEC_HALF 222 // 半区画走行用パルス。2倍すると1区画分に
+#define PULSE_ROT_R90 151     // 右90度回転用パルス数
+#define PULSE_ROT_L90 151     // 左90度回転用パルス数
 #define PULSE_ROT_IN 140  //0.5s : 140  0.4s : 131  0.35s :    //スラローム走行時の内側走行パルス数
 #define PULSE_ROT_OUT 435 //0.5s : 435  0.4s : 428  0.35s :    //スラローム走行時の外側走行パルス数
 
-#define PULSE_ROT_IN_50 140
-#define PULSE_ROT_OUT_50 435
+#define PULSE_ROT_IN_50 128
+#define PULSE_ROT_OUT_50 430
 #define PULSE_ROT_IN_40 131
 #define PULSE_ROT_OUT_40 428
 #define PULSE_ROT_IN_35 131
 #define PULSE_ROT_OUT_35 428
 
 #define PULSE_OFFSET 38   //0.5s : 38   0.4s : 38   0.35s :     //スラローム前後のオフセット区間
-#define PULSE_ROT_180 310     // 180度回転用パルス数
+#define PULSE_ROT_180 302     // 180度回転用パルス数
 #define PULSE_SETPOS_BACK 200 // 後ろ壁に当てるために下がるパルス数
 #define PULSE_SETPOS_SET 94 // 後ろ壁から中央までのパルス数
 
@@ -56,8 +56,8 @@
 #define ARR_OUT 1149  //0.5s : 1149  0.4s : 935   0.35s :      //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
-#define ARR_IN_50 3571
-#define ARR_OUT_50 1149
+#define ARR_IN_50 3906
+#define ARR_OUT_50 1163
 #define ARR_OFFSET_50 (ARR_IN_50 + ARR_OUT_50)/2
 #define ARR_IN_40 3053
 #define ARR_OUT_40 935
