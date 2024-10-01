@@ -30,12 +30,20 @@
 #define PULSE_ROT_IN 140  //0.5s : 140  0.4s : 131  0.35s :    //スラローム走行時の内側走行パルス数
 #define PULSE_ROT_OUT 435 //0.5s : 435  0.4s : 428  0.35s :    //スラローム走行時の外側走行パルス数
 
-#define PULSE_ROT_IN_50 126
-#define PULSE_ROT_OUT_50 428
-#define PULSE_ROT_IN_40 135
-#define PULSE_ROT_OUT_40 441
-#define PULSE_ROT_IN_35 135
-#define PULSE_ROT_OUT_35 441
+#define PULSE_ROT_IN_R50 128
+#define PULSE_ROT_OUT_R50 430
+#define PULSE_ROT_IN_R40 135
+#define PULSE_ROT_OUT_R40 441
+#define PULSE_ROT_IN_R35 135
+#define PULSE_ROT_OUT_R35 441
+
+#define PULSE_ROT_IN_L50 125
+#define PULSE_ROT_OUT_L50 430
+#define PULSE_ROT_IN_L40 122
+#define PULSE_ROT_OUT_L40 432
+#define PULSE_ROT_IN_L35 131
+#define PULSE_ROT_OUT_L35 441
+
 
 #define PULSE_OFFSET 38   //0.5s : 38   0.4s : 38   0.35s :     //スラローム前後のオフセット区間
 #define PULSE_OFFSET_50 38
@@ -59,15 +67,25 @@
 #define ARR_OUT 1149  //0.5s : 1149  0.4s : 935   0.35s :      //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
-#define ARR_IN_50 3968
-#define ARR_OUT_50 1168
-#define ARR_OFFSET_50 (ARR_IN_50 + ARR_OUT_50)/2
-#define ARR_IN_40 2963
-#define ARR_OUT_40 907
-#define ARR_OFFSET_40 (ARR_IN_40 + ARR_OUT_40)/2
-#define ARR_IN_35 2593
-#define ARR_OUT_35 794
-#define ARR_OFFSET_35 (ARR_IN_35 + ARR_OUT_35)/2
+#define ARR_IN_R50 3906
+#define ARR_OUT_R50 1163
+#define ARR_OFFSET_R50 (ARR_IN_R50 + ARR_OUT_R50)/2
+#define ARR_IN_R40 2963
+#define ARR_OUT_R40 907
+#define ARR_OFFSET_R40 (ARR_IN_R40 + ARR_OUT_R40)/2
+#define ARR_IN_R35 2593
+#define ARR_OUT_R35 794
+#define ARR_OFFSET_R35 (ARR_IN_R35 + ARR_OUT_R35)/2
+
+#define ARR_IN_L50 4000
+#define ARR_OUT_L50 1163
+#define ARR_OFFSET_L50 (ARR_IN_L50 + ARR_OUT_L50)/2
+#define ARR_IN_L40 3279
+#define ARR_OUT_L40 926
+#define ARR_OFFSET_L40 (ARR_IN_L40 + ARR_OUT_L40)/2
+#define ARR_IN_L35 2672
+#define ARR_OUT_L35 794
+#define ARR_OFFSET_L35 (ARR_IN_L35 + ARR_OUT_L35)/2
 
 //----動作方向関連----
 #define MT_FWD_L GPIO_PIN_SET    // CW/CCWで前に進む出力（左）
@@ -84,8 +102,10 @@
 #define WALL_BASE_R 300  // 右壁センサ
 #define WALL_BASE_L 300  // 左壁センサ
 
-#define ROT_START_FL 890//38
-#define ROT_START_FR 590//38
+#define ROT_START_FL_38 890//38
+#define ROT_START_FR_38 590//38
+#define ROT_START_FL_34 860//34
+#define ROT_START_FR_34 560//34
 
 #define BATT_LOW_VOL 3204 * 0.88 // バッテリ電圧低下判定のしきい値
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
@@ -111,7 +131,7 @@
     探索系
 ------------------------------------------------------------*/
 //----ゴール座標----
-#define GOAL_X 3 // 7
-#define GOAL_Y 5 // 7
+#define GOAL_X 1 // 7
+#define GOAL_Y 0 // 7
 
 #endif /* INC_PARAMS_H_ */
