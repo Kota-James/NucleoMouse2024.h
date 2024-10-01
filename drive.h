@@ -50,7 +50,7 @@
   volatile int16_t min_t_cnt, max_t_cnt;    //テーブルカウンタの最低値・最大値
   volatile uint16_t pulse_l, pulse_r;       //左右パルスカウンタ
   volatile uint16_t pulse_rot_in, pulse_rot_out, pulse_offset;
-  volatile uint16_t arr_in, arr_out;
+  volatile uint16_t arr_in, arr_out, arr_offset;
   volatile uint16_t rot_start_fl, rot_start_fr;
   volatile int16_t dl, dr;                  //比例制御量
 #else                       //main.c意外からこのファイルが呼ばれている場合
@@ -60,7 +60,7 @@
   extern volatile int16_t min_t_cnt, max_t_cnt;
   extern volatile uint16_t pulse_l, pulse_r;
   extern volatile uint16_t pulse_rot_in, pulse_rot_out, pulse_offset;
-  extern volatile uint16_t arr_in, arr_out;
+  extern volatile uint16_t arr_in, arr_out, arr_offset;
   extern volatile uint16_t rot_start_fl, rot_start_fr;
   extern volatile int16_t dl, dr;
 #endif

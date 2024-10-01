@@ -56,6 +56,16 @@
 #define ARR_OUT 1149  //0.5s : 1149  0.4s : 935   0.35s :      //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
+#define ARR_IN_50 3571
+#define ARR_OUT_50 1149
+#define ARR_OFFSET_50 (ARR_IN_50 + ARR_OUT_50)/2
+#define ARR_IN_40 3053
+#define ARR_OUT_40 935
+#define ARR_OFFSET_40 (ARR_IN_40 + ARR_OUT_40)/2
+#define ARR_IN_35 3053
+#define ARR_OUT_35 935
+#define ARR_OFFSET_35 (ARR_IN_35 + ARR_OUT_35)/2
+
 //----動作方向関連----
 #define MT_FWD_L GPIO_PIN_SET    // CW/CCWで前に進む出力（左）
 #define MT_BACK_L GPIO_PIN_RESET // CW/CCWで後ろに進む出力（左）
