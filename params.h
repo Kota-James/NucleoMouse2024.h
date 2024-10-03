@@ -116,11 +116,11 @@
 #define CTRL_BASE_R 30 // 右制御閾値
 #define CTRL_MAX 65    // 制御量上限値
 #define CTRL_P 0.25  // 比例制御係数
-#define CTRL_D 0.07  //微分制御係数
+#define CTRL_D 0.075  //微分制御係数
 #define CTRL_AMOUNT 2   //制御量
-#define CTRL_MODE1  1.3
-#define CTRL_MODE2  0.5
-#define CTRL_MODE3  0.5
+#define CTRL_MODE1  2.0
+#define CTRL_MODE2  0.7
+#define CTRL_MODE3  0.7
 #define CTRL_MODE4  0.3
 #define CTRL_MODE5  0.3
 
