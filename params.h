@@ -30,15 +30,15 @@
 #define PULSE_ROT_IN 140  //0.5s : 140  0.4s : 131  0.35s :    //スラローム走行時の内側走行パルス数
 #define PULSE_ROT_OUT 435 //0.5s : 435  0.4s : 428  0.35s :    //スラローム走行時の外側走行パルス数
 
-#define PULSE_ROT_IN_R50 128
-#define PULSE_ROT_OUT_R50 430
+#define PULSE_ROT_IN_R50 123
+#define PULSE_ROT_OUT_R50 424
 #define PULSE_ROT_IN_R40 135
 #define PULSE_ROT_OUT_R40 441
 #define PULSE_ROT_IN_R35 135
 #define PULSE_ROT_OUT_R35 441
 
-#define PULSE_ROT_IN_L50 125
-#define PULSE_ROT_OUT_L50 430
+#define PULSE_ROT_IN_L50 121//125
+#define PULSE_ROT_OUT_L50 426//430
 #define PULSE_ROT_IN_L40 122
 #define PULSE_ROT_OUT_L40 432
 #define PULSE_ROT_IN_L35 131
@@ -67,8 +67,8 @@
 #define ARR_OUT 1149  //0.5s : 1149  0.4s : 935   0.35s :      //スラローム走行時の外側ARR
 #define ARR_OFFSET (ARR_IN + ARR_OUT)/2
 
-#define ARR_IN_R50 3906
-#define ARR_OUT_R50 1163
+#define ARR_IN_R50 4065
+#define ARR_OUT_R50 1179
 #define ARR_OFFSET_R50 (ARR_IN_R50 + ARR_OUT_R50)/2
 #define ARR_IN_R40 2963
 #define ARR_OUT_R40 907
@@ -77,8 +77,8 @@
 #define ARR_OUT_R35 794
 #define ARR_OFFSET_R35 (ARR_IN_R35 + ARR_OUT_R35)/2
 
-#define ARR_IN_L50 4000
-#define ARR_OUT_L50 1163
+#define ARR_IN_L50 4132//4000
+#define ARR_OUT_L50 1174//1163
 #define ARR_OFFSET_L50 (ARR_IN_L50 + ARR_OUT_L50)/2
 #define ARR_IN_L40 3279
 #define ARR_OUT_L40 926
@@ -102,8 +102,8 @@
 #define WALL_BASE_R 300  // 右壁センサ
 #define WALL_BASE_L 300  // 左壁センサ
 
-#define ROT_START_FL_38 890//38
-#define ROT_START_FR_38 590//38
+#define ROT_START_FL_38 900//38
+#define ROT_START_FR_38 600//38
 #define ROT_START_FL_34 860//34
 #define ROT_START_FR_34 560//34
 
@@ -118,11 +118,11 @@
 #define CTRL_P 0.25  // 比例制御係数
 #define CTRL_D 0.075  //微分制御係数
 #define CTRL_AMOUNT 2   //制御量
-#define CTRL_MODE1  2.0
-#define CTRL_MODE2  0.7
-#define CTRL_MODE3  0.7
-#define CTRL_MODE4  0.3
-#define CTRL_MODE5  0.3
+#define CTRL_MODE1  1.75
+#define CTRL_MODE2  1.3
+#define CTRL_MODE3  0.8
+#define CTRL_MODE4  0.5
+#define CTRL_MODE5  0.5
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
