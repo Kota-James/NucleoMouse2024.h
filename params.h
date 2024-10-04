@@ -118,11 +118,11 @@
 #define CTRL_P 0.25  // 比例制御係数
 #define CTRL_D 0.075  //微分制御係数
 #define CTRL_AMOUNT 2   //制御量
-#define CTRL_MODE1  1.75
-#define CTRL_MODE2  1.3
-#define CTRL_MODE3  0.8
-#define CTRL_MODE4  0.5
-#define CTRL_MODE5  0.5
+#define CTRL_MODE1  1.8
+#define CTRL_MODE2  1.5
+#define CTRL_MODE3  1.2
+#define CTRL_MODE4  1.0
+#define CTRL_MODE5  1.0
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
 #define IR_WAIT_US 15
