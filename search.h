@@ -59,6 +59,7 @@ struct coordinate_and_direction{
   uint8_t route[256];                 //最短経路格納配列
   uint8_t r_cnt;                      //経路カウンタ
   uint8_t tyokusen_ctrl;
+  uint8_t rot_forward_ctrl;
 #else                         //main.c以外からこのファイルが呼ばれている場合
   /*グローバル変数の宣言*/
   extern uint8_t map[16][16];         //マップ格納配列
@@ -68,6 +69,7 @@ struct coordinate_and_direction{
   extern uint8_t route[256];          //最短経路格納配列
   extern uint8_t r_cnt;               //経路カウンタ
   extern uint8_t tyokusen_ctrl;
+  extern uint8_t rot_forward_ctrl;
 #endif
 
 
