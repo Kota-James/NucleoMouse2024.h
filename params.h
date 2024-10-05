@@ -97,10 +97,10 @@
     センサ系
 ------------------------------------------------------------*/
 //----壁判断閾値（しきい値）----
-#define WALL_BASE_FR 100 // 前壁右センサ
-#define WALL_BASE_FL 250 // 前壁左センサ
-#define WALL_BASE_R 300  // 右壁センサ
-#define WALL_BASE_L 300  // 左壁センサ
+#define WALL_BASE_FR 50//150 // 前壁右センサ
+#define WALL_BASE_FL 50//250 // 前壁左センサ
+#define WALL_BASE_R 250//300  // 右壁センサ
+#define WALL_BASE_L 250//300  // 左壁センサ
 
 #define ROT_START_FL_38 900//38
 #define ROT_START_FR_38 600//38
@@ -111,12 +111,12 @@
 // 33kΩと10kΩの分圧抵抗を通してバッテリ電圧を取得している→ 11.1*(10/(10+33)/3.3)*4096=3204
 
 //----制御閾値（しきい値）----  250
-#define RAPID_CHANGE 50  //急激な変化量の基準値
+#define RAPID_CHANGE 200  //急激な変化量の基準値
 #define CTRL_BASE_L 30 // 左制御閾値
 #define CTRL_BASE_R 30 // 右制御閾値
 #define CTRL_MAX 65    // 制御量上限値
 #define CTRL_P 0.25  // 比例制御係数
-#define CTRL_D 0.075  //微分制御係数
+#define CTRL_D 0//0.075  //微分制御係数
 #define CTRL_AMOUNT 2   //制御量
 #define CTRL_MODE1  1.8
 #define CTRL_MODE2  1.0
@@ -125,7 +125,7 @@
 #define CTRL_MODE5  0.6
 
 //----赤外線（赤色）LED発光待機時間（単位はマイクロ秒）
-#define IR_WAIT_US 15
+#define IR_WAIT_US 50//15
 
 /*------------------------------------------------------------
     探索系
