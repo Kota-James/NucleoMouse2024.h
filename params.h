@@ -131,7 +131,7 @@
     探索系
 ------------------------------------------------------------*/
 //----ゴール座標----
-#define GOAL_X 1 // 7
-#define GOAL_Y 0 // 7
+#define GOAL_X 7 // 7
+#define GOAL_Y 7 // 7
 
 #endif /* INC_PARAMS_H_ */
